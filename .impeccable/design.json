@@ -1,0 +1,562 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T19:55:18.007764+00:00",
+  "title": "Design System: Parallax",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.03131 300.68)",
+          "oklch(26.43% 0.03131 300.68)",
+          "oklch(37.86% 0.03131 300.68)",
+          "oklch(49.29% 0.03131 300.68)",
+          "oklch(60.71% 0.03131 300.68)",
+          "oklch(72.14% 0.03131 300.68)",
+          "oklch(83.57% 0.03131 300.68)",
+          "oklch(95.00% 0.03131 300.68)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.02414 303.70)",
+          "oklch(26.43% 0.02414 303.70)",
+          "oklch(37.86% 0.02414 303.70)",
+          "oklch(49.29% 0.02414 303.70)",
+          "oklch(60.71% 0.02414 303.70)",
+          "oklch(72.14% 0.02414 303.70)",
+          "oklch(83.57% 0.02414 303.70)",
+          "oklch(95.00% 0.02414 303.70)"
+        ]
+      },
+      "smalltext": {
+        "role": "neutral",
+        "displayName": "Small-text plum",
+        "tonalRamp": [
+          "oklch(15.00% 0.03687 307.64)",
+          "oklch(26.43% 0.03687 307.64)",
+          "oklch(37.86% 0.03687 307.64)",
+          "oklch(49.29% 0.03687 307.64)",
+          "oklch(60.71% 0.03687 307.64)",
+          "oklch(72.14% 0.03687 307.64)",
+          "oklch(83.57% 0.03687 307.64)",
+          "oklch(95.00% 0.03687 307.64)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Fine lilac",
+        "tonalRamp": [
+          "oklch(15.00% 0.01388 299.78)",
+          "oklch(26.43% 0.01388 299.78)",
+          "oklch(37.86% 0.01388 299.78)",
+          "oklch(49.29% 0.01388 299.78)",
+          "oklch(60.71% 0.01388 299.78)",
+          "oklch(72.14% 0.01388 299.78)",
+          "oklch(83.57% 0.01388 299.78)",
+          "oklch(95.00% 0.01388 299.78)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Cool lilac",
+        "tonalRamp": [
+          "oklch(15.00% 0.00540 297.73)",
+          "oklch(26.43% 0.00540 297.73)",
+          "oklch(37.86% 0.00540 297.73)",
+          "oklch(49.29% 0.00540 297.73)",
+          "oklch(60.71% 0.00540 297.73)",
+          "oklch(72.14% 0.00540 297.73)",
+          "oklch(83.57% 0.00540 297.73)",
+          "oklch(95.00% 0.00540 297.73)"
+        ]
+      },
+      "purple": {
+        "role": "primary",
+        "displayName": "Plum",
+        "tonalRamp": [
+          "oklch(15.00% 0.08876 305.53)",
+          "oklch(26.43% 0.08876 305.53)",
+          "oklch(37.86% 0.08876 305.53)",
+          "oklch(49.29% 0.08876 305.53)",
+          "oklch(60.71% 0.08876 305.53)",
+          "oklch(72.14% 0.08876 305.53)",
+          "oklch(83.57% 0.08876 305.53)",
+          "oklch(95.00% 0.08876 305.53)"
+        ]
+      },
+      "sidebar": {
+        "role": "primary",
+        "displayName": "Aubergine",
+        "tonalRamp": [
+          "oklch(15.00% 0.03552 298.51)",
+          "oklch(26.43% 0.03552 298.51)",
+          "oklch(37.86% 0.03552 298.51)",
+          "oklch(49.29% 0.03552 298.51)",
+          "oklch(60.71% 0.03552 298.51)",
+          "oklch(72.14% 0.03552 298.51)",
+          "oklch(83.57% 0.03552 298.51)",
+          "oklch(95.00% 0.03552 298.51)"
+        ]
+      },
+      "series-a": {
+        "role": "secondary",
+        "displayName": "Burnt coral",
+        "tonalRamp": [
+          "oklch(15.00% 0.13841 29.76)",
+          "oklch(26.43% 0.13841 29.76)",
+          "oklch(37.86% 0.13841 29.76)",
+          "oklch(49.29% 0.13841 29.76)",
+          "oklch(60.71% 0.13841 29.76)",
+          "oklch(72.14% 0.13841 29.76)",
+          "oklch(83.57% 0.13841 29.76)",
+          "oklch(95.00% 0.13841 29.76)"
+        ]
+      },
+      "series-b": {
+        "role": "secondary",
+        "displayName": "Deep teal",
+        "tonalRamp": [
+          "oklch(15.00% 0.08615 182.22)",
+          "oklch(26.43% 0.08615 182.22)",
+          "oklch(37.86% 0.08615 182.22)",
+          "oklch(49.29% 0.08615 182.22)",
+          "oklch(60.71% 0.08615 182.22)",
+          "oklch(72.14% 0.08615 182.22)",
+          "oklch(83.57% 0.08615 182.22)",
+          "oklch(95.00% 0.08615 182.22)"
+        ]
+      },
+      "series-a-soft": {
+        "role": "secondary",
+        "displayName": "Coral wash",
+        "tonalRamp": [
+          "oklch(15.00% 0.01882 38.15)",
+          "oklch(26.43% 0.01882 38.15)",
+          "oklch(37.86% 0.01882 38.15)",
+          "oklch(49.29% 0.01882 38.15)",
+          "oklch(60.71% 0.01882 38.15)",
+          "oklch(72.14% 0.01882 38.15)",
+          "oklch(83.57% 0.01882 38.15)",
+          "oklch(95.00% 0.01882 38.15)"
+        ]
+      },
+      "series-b-soft": {
+        "role": "secondary",
+        "displayName": "Teal wash",
+        "tonalRamp": [
+          "oklch(15.00% 0.01577 177.07)",
+          "oklch(26.43% 0.01577 177.07)",
+          "oklch(37.86% 0.01577 177.07)",
+          "oklch(49.29% 0.01577 177.07)",
+          "oklch(60.71% 0.01577 177.07)",
+          "oklch(72.14% 0.01577 177.07)",
+          "oklch(83.57% 0.01577 177.07)",
+          "oklch(95.00% 0.01577 177.07)"
+        ]
+      },
+      "landscape": {
+        "role": "neutral",
+        "displayName": "Landscape lilac",
+        "tonalRamp": [
+          "oklch(15.00% 0.01244 301.28)",
+          "oklch(26.43% 0.01244 301.28)",
+          "oklch(37.86% 0.01244 301.28)",
+          "oklch(49.29% 0.01244 301.28)",
+          "oklch(60.71% 0.01244 301.28)",
+          "oklch(72.14% 0.01244 301.28)",
+          "oklch(83.57% 0.01244 301.28)",
+          "oklch(95.00% 0.01244 301.28)"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Lavender focus",
+        "tonalRamp": [
+          "oklch(15.00% 0.09654 305.21)",
+          "oklch(26.43% 0.09654 305.21)",
+          "oklch(37.86% 0.09654 305.21)",
+          "oklch(49.29% 0.09654 305.21)",
+          "oklch(60.71% 0.09654 305.21)",
+          "oklch(72.14% 0.09654 305.21)",
+          "oklch(83.57% 0.09654 305.21)",
+          "oklch(95.00% 0.09654 305.21)"
+        ]
+      },
+      "nav-active": {
+        "role": "primary",
+        "displayName": "Active aubergine",
+        "tonalRamp": [
+          "oklch(15.00% 0.04713 308.74)",
+          "oklch(26.43% 0.04713 308.74)",
+          "oklch(37.86% 0.04713 308.74)",
+          "oklch(49.29% 0.04713 308.74)",
+          "oklch(60.71% 0.04713 308.74)",
+          "oklch(72.14% 0.04713 308.74)",
+          "oklch(83.57% 0.04713 308.74)",
+          "oklch(95.00% 0.04713 308.74)"
+        ]
+      },
+      "nav-hover": {
+        "role": "primary",
+        "displayName": "Hovered aubergine",
+        "tonalRamp": [
+          "oklch(15.00% 0.03991 302.99)",
+          "oklch(26.43% 0.03991 302.99)",
+          "oklch(37.86% 0.03991 302.99)",
+          "oklch(49.29% 0.03991 302.99)",
+          "oklch(60.71% 0.03991 302.99)",
+          "oklch(72.14% 0.03991 302.99)",
+          "oklch(83.57% 0.03991 302.99)",
+          "oklch(95.00% 0.03991 302.99)"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Action hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.05673 306.78)",
+          "oklch(26.43% 0.05673 306.78)",
+          "oklch(37.86% 0.05673 306.78)",
+          "oklch(49.29% 0.05673 306.78)",
+          "oklch(60.71% 0.05673 306.78)",
+          "oklch(72.14% 0.05673 306.78)",
+          "oklch(83.57% 0.05673 306.78)",
+          "oklch(95.00% 0.05673 306.78)"
+        ]
+      },
+      "button-hover": {
+        "role": "neutral",
+        "displayName": "Pale-lilac hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.01401 304.13)",
+          "oklch(26.43% 0.01401 304.13)",
+          "oklch(37.86% 0.01401 304.13)",
+          "oklch(49.29% 0.01401 304.13)",
+          "oklch(60.71% 0.01401 304.13)",
+          "oklch(72.14% 0.01401 304.13)",
+          "oklch(83.57% 0.01401 304.13)",
+          "oklch(95.00% 0.01401 304.13)"
+        ]
+      },
+      "segmented-ground": {
+        "role": "neutral",
+        "displayName": "Segmented lilac",
+        "tonalRamp": [
+          "oklch(15.00% 0.01111 303.11)",
+          "oklch(26.43% 0.01111 303.11)",
+          "oklch(37.86% 0.01111 303.11)",
+          "oklch(49.29% 0.01111 303.11)",
+          "oklch(60.71% 0.01111 303.11)",
+          "oklch(72.14% 0.01111 303.11)",
+          "oklch(83.57% 0.01111 303.11)",
+          "oklch(95.00% 0.01111 303.11)"
+        ]
+      },
+      "table-heading": {
+        "role": "neutral",
+        "displayName": "Table paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.00409 301.43)",
+          "oklch(26.43% 0.00409 301.43)",
+          "oklch(37.86% 0.00409 301.43)",
+          "oklch(49.29% 0.00409 301.43)",
+          "oklch(60.71% 0.00409 301.43)",
+          "oklch(72.14% 0.00409 301.43)",
+          "oklch(83.57% 0.00409 301.43)",
+          "oklch(95.00% 0.00409 301.43)"
+        ]
+      },
+      "warning-ground": {
+        "role": "secondary",
+        "displayName": "Warning wash",
+        "tonalRamp": [
+          "oklch(15.00% 0.03669 86.17)",
+          "oklch(26.43% 0.03669 86.17)",
+          "oklch(37.86% 0.03669 86.17)",
+          "oklch(49.29% 0.03669 86.17)",
+          "oklch(60.71% 0.03669 86.17)",
+          "oklch(72.14% 0.03669 86.17)",
+          "oklch(83.57% 0.03669 86.17)",
+          "oklch(95.00% 0.03669 86.17)"
+        ]
+      },
+      "warning-text": {
+        "role": "secondary",
+        "displayName": "Warning ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.06867 80.65)",
+          "oklch(26.43% 0.06867 80.65)",
+          "oklch(37.86% 0.06867 80.65)",
+          "oklch(49.29% 0.06867 80.65)",
+          "oklch(60.71% 0.06867 80.65)",
+          "oklch(72.14% 0.06867 80.65)",
+          "oklch(83.57% 0.06867 80.65)",
+          "oklch(95.00% 0.06867 80.65)"
+        ]
+      },
+      "error-ground": {
+        "role": "secondary",
+        "displayName": "Error wash",
+        "tonalRamp": [
+          "oklch(15.00% 0.02085 36.03)",
+          "oklch(26.43% 0.02085 36.03)",
+          "oklch(37.86% 0.02085 36.03)",
+          "oklch(49.29% 0.02085 36.03)",
+          "oklch(60.71% 0.02085 36.03)",
+          "oklch(72.14% 0.02085 36.03)",
+          "oklch(83.57% 0.02085 36.03)",
+          "oklch(95.00% 0.02085 36.03)"
+        ]
+      },
+      "error-text": {
+        "role": "secondary",
+        "displayName": "Error ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.11437 29.30)",
+          "oklch(26.43% 0.11437 29.30)",
+          "oklch(37.86% 0.11437 29.30)",
+          "oklch(49.29% 0.11437 29.30)",
+          "oklch(60.71% 0.11437 29.30)",
+          "oklch(72.14% 0.11437 29.30)",
+          "oklch(83.57% 0.11437 29.30)",
+          "oklch(95.00% 0.11437 29.30)"
+        ]
+      }
+    },
+    "tonalRampNote": "Synthesized OKLCH preview ramps preserve each source hue/chroma; they are not additional shipped theme tokens. DESIGN.md owns canonical CSS colors.",
+    "typographyMeta": {
+      "display": {
+        "displayName": "Main heading",
+        "purpose": "Compact workspace title; 34px wide, 26px at tablet/mobile widths."
+      },
+      "metric": {
+        "displayName": "Comparative quantity",
+        "purpose": "Tabular figures for readable paired measurements."
+      },
+      "body": {
+        "displayName": "Methodology body",
+        "purpose": "Explanatory text with 65ch maximum measure."
+      }
+    },
+    "shadows": [
+      {
+        "name": "selected-segment",
+        "value": "0 2px 4px #30223a09",
+        "purpose": "Selected 3D/List segment."
+      },
+      {
+        "name": "scene-tooltip",
+        "value": "0 6px 18px #27223520",
+        "purpose": "Floating repository tooltip."
+      },
+      {
+        "name": "toast",
+        "value": "0 10px 35px #2e223b25",
+        "purpose": "Transient feedback above the workspace."
+      }
+    ],
+    "focus": {
+      "outline": "3px solid #9477b5",
+      "outlineOffset": "4px"
+    },
+    "motion": [
+      {
+        "name": "control-transition",
+        "value": "0.2s",
+        "purpose": "Button background and navigation background/color."
+      },
+      {
+        "name": "loading-spin",
+        "value": "0.8s linear infinite",
+        "purpose": "Busy indicator."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms; 1 iteration",
+        "purpose": "Minimize CSS animation/transition; initial view is List."
+      },
+      {
+        "name": "scene-hover",
+        "value": "scale(1.07, 1.02, 1.07)",
+        "purpose": "Direct hover identification; no automatic orbit."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1500px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1150px"
+      },
+      {
+        "name": "icon-rail-max",
+        "value": "900px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "650px"
+      }
+    ],
+    "scene": {
+      "source": "src/lib/landscape.ts",
+      "seriesMaterials": ["#c36653", "#318b7e"],
+      "plinthMaterials": ["#e6d6d4", "#d2e0dd"],
+      "roughness": 0.6,
+      "metalness": 0.04,
+      "plinthRoughness": 0.9,
+      "shadowColor": "#3c2547",
+      "shadowOpacity": 0.13,
+      "columnDimensions": "0.86 × (0.13 + log1p(value)/sharedMax × 4) × 0.86",
+      "columnRadius": 0.045,
+      "plinthDimensions": "7.4 × 0.16 × 6.8",
+      "plinthRadius": 0.08,
+      "cameraFov": 35,
+      "toneMapping": "ACESFilmicToneMapping",
+      "exposure": 1.35,
+      "pixelRatioCap": 1.75,
+      "rendering": "Demand-driven; intersection-aware; no automatic orbit.",
+      "data": "Top 30 loaded original repositories per profile; shared log scale; exact list alternative."
+    },
+    "accessibility": {
+      "focus": "Visible global outline; named icon actions; skip link.",
+      "comparison": "Visible owner names; semantic row/column headers; tabular numerals.",
+      "canvas": "aria-hidden and tabindex -1; List alternative; reduced-motion defaults to List.",
+      "status": "Polite live regions and aria-busy during loading."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Conventional labeled action with the global visible focus treatment.",
+      "html": "<button type=\"button\" class=\"ds-button-primary\">Compare</button>",
+      "css": ".ds-button-primary{font-family:'Manrope Variable',sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border:1px solid var(--line,#dedbe5);border-radius:8px;font-size:12px;font-weight:650;line-height:1.3;cursor:pointer;transition:background .2s;background:var(--sidebar,#292336);border-color:var(--sidebar,#292336);color:white;min-width:125px;}.ds-button-primary:hover{background:#4b3b5b;}.ds-button-primary:focus-visible{outline:3px solid var(--ds-focus,#9477b5);outline-offset:4px}.ds-button-primary:disabled{opacity:.55;cursor:wait;}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Conventional labeled action with the global visible focus treatment.",
+      "html": "<button type=\"button\" class=\"ds-button-secondary\">Load more</button>",
+      "css": ".ds-button-secondary{font-family:'Manrope Variable',sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border:1px solid var(--line,#dedbe5);border-radius:8px;font-size:12px;font-weight:650;line-height:1.3;cursor:pointer;transition:background .2s;background:var(--paper,#fff);color:var(--ink,#302a3b);}.ds-button-secondary:hover{background:#ebe7f1;}.ds-button-secondary:focus-visible{outline:3px solid var(--ds-focus,#9477b5);outline-offset:4px}.ds-button-secondary:disabled{opacity:.55;cursor:wait;}"
+    },
+    {
+      "name": "Ghost button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Conventional labeled action with the global visible focus treatment.",
+      "html": "<button type=\"button\" class=\"ds-button-ghost\">Cancel</button>",
+      "css": ".ds-button-ghost{font-family:'Manrope Variable',sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border:1px solid var(--line,#dedbe5);border-radius:8px;font-size:12px;font-weight:650;line-height:1.3;cursor:pointer;transition:background .2s;background:transparent;border-color:transparent;color:var(--ink,#302a3b);}.ds-button-ghost:hover{background:transparent;}.ds-button-ghost:focus-visible{outline:3px solid var(--ds-focus,#9477b5);outline-offset:4px}.ds-button-ghost:disabled{opacity:.55;cursor:wait;}"
+    },
+    {
+      "name": "Handle field",
+      "kind": "input",
+      "refersTo": "handle-field",
+      "description": "Labeled username field with a persistent series identifier.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-identity\">A</span><span class=\"ds-at\">@</span><input aria-label=\"First GitHub username\" placeholder=\"First username\" value=\"raelsei\" /></label>",
+      "css": ".ds-field{font-family:'Manrope Variable',sans-serif;display:flex;gap:9px;align-items:center;background:var(--paper,#fff);border:1px solid var(--line,#dedbe5);border-radius:9px;padding:8px 12px;}.ds-identity{display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;border-radius:6px;background:var(--a-soft,#f5e5e0);color:var(--a,#a94235);font-size:11px;font-weight:750;flex-shrink:0}.ds-at{font-size:13px;color:#706579}.ds-field input{font-family:'Manrope Variable',sans-serif;border:0;background:transparent;min-width:0;width:100%;padding:3px 0;font-size:12px;font-weight:600;color:var(--ink,#302a3b);caret-color:var(--purple,#6e548a)}.ds-field input:focus-visible{outline:3px solid var(--ds-focus,#9477b5);outline-offset:4px}"
+    },
+    {
+      "name": "Identity chips",
+      "kind": "chip",
+      "refersTo": "identity-a",
+      "description": "Letter and color jointly identify the two comparison sides.",
+      "html": "<span class=\"ds-chip ds-chip-a\">A</span> <span class=\"ds-chip ds-chip-b\">B</span>",
+      "css": ".ds-chip{font-family:'Manrope Variable',sans-serif;display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;border-radius:6px;font-size:11px;font-weight:750}.ds-chip-a{background:var(--a-soft,#f5e5e0);color:var(--a,#a94235)}.ds-chip-b{background:var(--b-soft,#e0eeea);color:var(--b,#16776b)}"
+    },
+    {
+      "name": "Workspace navigation",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "Dark rail navigation with an explicitly marked active view.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Workspace\"><button class=\"ds-nav-item\" aria-current=\"page\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 9v12\"/></svg>Overview</button><button class=\"ds-nav-item\">Repositories</button></nav>",
+      "css": ".ds-nav{background:var(--sidebar,#292336);padding:14px}.ds-nav-item{font-family:'Manrope Variable',sans-serif;display:flex;align-items:center;gap:12px;width:100%;padding:13px 14px;border:0;border-radius:8px;background:transparent;color:#c9bfd5;font-size:12px;font-weight:550;text-align:left;margin:4px 0;cursor:pointer;transition:background .2s,color .2s}.ds-nav-item:hover{background:#393046;color:white}.ds-nav-item[aria-current]{background:#473953;color:white}.ds-nav-item:focus-visible{outline:3px solid var(--ds-focus,#9477b5);outline-offset:4px}"
+    },
+    {
+      "name": "View switch",
+      "kind": "custom",
+      "refersTo": "view-switch",
+      "description": "Pressed state distinguishes the selected repository representation.",
+      "html": "<div class=\"ds-switch\" aria-label=\"Repository visualization\"><button aria-pressed=\"true\">3D</button><button aria-pressed=\"false\">List</button></div>",
+      "css": ".ds-switch{display:inline-flex;padding:3px;border:1px solid var(--line,#dedbe5);border-radius:8px;background:#eeebf3}.ds-switch button{font-family:'Manrope Variable',sans-serif;font-size:10px;border:0;background:transparent;border-radius:5px;padding:7px 10px;color:#756b80;cursor:pointer}.ds-switch button[aria-pressed=\"true\"]{background:white;color:var(--ink,#302a3b);box-shadow:0 2px 4px #30223a09}.ds-switch button:focus-visible{outline:3px solid var(--ds-focus,#9477b5);outline-offset:4px}"
+    },
+    {
+      "name": "Information panel",
+      "kind": "card",
+      "refersTo": "information-panel",
+      "description": "Flat bordered surface for methodology and repository details.",
+      "html": "<section class=\"ds-panel\"><h2>Public evidence, not a score</h2><p>Parallax compares visible GitHub work. Stars show interest, not code quality.</p></section>",
+      "css": ".ds-panel{font-family:'Manrope Variable',sans-serif;padding:26px;background:var(--paper,#fff);border:1px solid var(--line,#dedbe5);border-radius:var(--radius,12px);color:var(--ink,#302a3b)}.ds-panel h2{font-size:17px;letter-spacing:-.025em;margin:0;font-weight:700}.ds-panel p{font-size:12px;line-height:1.9;color:var(--muted,#716b7a);max-width:65ch}"
+    },
+    {
+      "name": "Owner comparison table",
+      "kind": "custom",
+      "description": "Semantic owner headings preserve attribution independently of series color.",
+      "html": "<table class=\"ds-insights\"><caption>Additional public profile metrics</caption><thead><tr><th scope=\"col\">Measure</th><th scope=\"col\" class=\"ds-a\">Profile A</th><th scope=\"col\" class=\"ds-b\">Profile B</th></tr></thead><tbody><tr><th scope=\"row\">Public gists</th><td class=\"ds-a\">12</td><td class=\"ds-b\">8</td></tr></tbody></table>",
+      "css": ".ds-insights{font-family:'Manrope Variable',sans-serif;width:100%;table-layout:fixed;border-collapse:collapse;text-align:left}.ds-insights caption{font-size:11px;text-align:left;color:var(--muted,#716b7a);padding:0 0 12px}.ds-insights thead{background:#f9f8fb}.ds-insights th,.ds-insights td{padding:12px 6px;font-size:11px;overflow-wrap:anywhere;border-bottom:1px solid var(--line,#dedbe5)}.ds-insights th:first-child{width:44%;padding-left:0}.ds-insights tbody th{color:var(--muted,#716b7a);font-weight:400}.ds-insights td{font-weight:650;font-variant-numeric:tabular-nums}.ds-a{color:var(--a,#a94235)}.ds-b{color:var(--b,#16776b)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Material atlas",
+    "overview": "The Material atlas makes two public bodies of work tangible. Aubergine navigation organizes a cool lilac workspace; coral and teal consistently identify the two sides. Compact typography, aligned quantities and conventional controls keep the interface useful for close comparison.\n\nDepth belongs to the repository landscape. Its paired plinths and rounded columns are rendered from loaded repository data, while exact values remain available in tables. The identity is code-led: an authored geometric SVG mark, self-hosted Manrope and real data geometry. Public GitHub avatars are externally loaded identity images; there are no shipped decorative raster assets.",
+    "keyCharacteristics": [
+      "Cool lilac ground with a dark aubergine navigation rail.",
+      "Coral and teal paired with explicit owner labels.",
+      "Compact Manrope typography and tabular numeric alignment.",
+      "Data-bound 3D beside conventional tables and controls."
+    ],
+    "rules": [
+      {
+        "name": "Identity with Labels",
+        "body": "Series color reinforces an owner name or A/B identifier; it does not replace that label.",
+        "section": "colors"
+      },
+      {
+        "name": "Comparable Quantities",
+        "body": "Align numbers with tabular figures and give each comparative column an explicit owner.",
+        "section": "typography"
+      },
+      {
+        "name": "Data Makes the Depth",
+        "body": "The landscape geometry expresses loaded repository measurements; precise values and repository actions remain available outside the canvas.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep coral and teal paired with A/B identifiers or visible profile names.",
+      "Do preserve the visible Compare action across viewport sizes.",
+      "Do use semantic row and column headers for comparative numbers.",
+      "Do disclose loaded coverage and scale beside the visual that uses them.",
+      "Do retain the List alternative, visible focus and reduced-motion behavior.",
+      "Do use public GitHub avatars only as identity content and keep authored branding as SVG."
+    ],
+    "donts": [
+      "Don't interpret stars, event counts or landscape height as a developer ability score.",
+      "Don't replace precise repository records with a canvas-only interaction.",
+      "Don't silently normalize the two activity charts to different scales.",
+      "Don't turn every flat information surface into a floating 3D card.",
+      "Don't treat decorative color or hover tooltips as the sole carrier of essential information."
+    ]
+  }
+}
