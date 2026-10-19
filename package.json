@@ -1,36 +1,28 @@
 {
-  "name": "githup",
-  "version": "0.2.0",
-  "private": false,
+  "name": "parallax",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Compare the shape of open-source work. Public GitHub analytics, in perspective.",
   "license": "MIT",
-  "author": {
-    "name": "Koray Guler",
-    "email": "koray@koative.com",
-    "url": "https://korayguler.com"
-  },
+  "author": "Koray Güler",
   "scripts": {
-    "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro check && astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "core-js": "^3.9.0",
-    "vue": "^3.0.6",
-    "vue-router": "^4.0.4",
-    "vuex": "^4.0.0"
+    "@astrojs/check": "^0.9.11",
+    "@fontsource-variable/manrope": "^5.3.0",
+    "astro": "^7.4.1",
+    "lucide": "^1.59.0",
+    "three": "^0.186.1",
+    "typescript": "^6.0.3"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.11",
-    "@vue/cli-plugin-router": "^4.5.11",
-    "@vue/cli-plugin-vuex": "^4.5.11",
-    "@vue/cli-service": "^4.5.11",
-    "@vue/compiler-sfc": "^3.0.6",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^8.0.2"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "@types/three": "^0.186.0",
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.1"
+  }
 }

@@ -21,3 +21,13 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+.astro/
+work/
+.impeccable/mocks/
+.impeccable/review/
+.env
+.env.*
+!.env.example
+
+.impeccable/questions/

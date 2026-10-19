@@ -1,0 +1,271 @@
+---
+import '@fontsource-variable/manrope';
+import '../styles/global.css';
+const base = import.meta.env.BASE_URL;
+const site = Astro.site ?? new URL('https://parallax.koray.dev');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#292336" />
+    <title>Parallax — Open source, in perspective.</title>
+    <meta
+      name="description"
+      content="Put two GitHub profiles side by side. Explore repositories in 3D, compare languages and public activity, and see the work from a different angle."
+    />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+    <link rel="canonical" href={site} />
+    <meta
+      property="og:title"
+      content="Parallax — Open source, in perspective."
+    />
+    <meta
+      property="og:description"
+      content="Two developers. A different perspective. Compare public GitHub work in an interactive 3D landscape."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={site} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Skip to comparison
+    </a>
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href={base} aria-label="Parallax home">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 9 16 2l12 7v14l-12 7-12-7V9Z" />
+          <path d="m4 9 12 7 12-7M16 16v14M10 5.5l12 7v14" />
+        </svg>
+        <span>
+          parallax<span class="brand-dot">.</span>
+        </span>
+      </a>
+      <div class="nav-caption">Your workspace</div>
+      <nav id="navigation">
+        <button data-tab="overview" class="nav-item active" aria-current="page">
+          <i data-lucide="panels-top-left"></i>Overview
+        </button>
+        <button data-tab="repositories" class="nav-item">
+          <i data-lucide="git-fork"></i>Repositories
+          <span id="nav-repos" class="nav-count"></span>
+        </button>
+        <button data-tab="activity" class="nav-item">
+          <i data-lucide="activity"></i>Activity
+        </button>
+        <button data-tab="community" class="nav-item">
+          <i data-lucide="users"></i>Community
+        </button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-note">
+          <span class="tiny-mark">
+            A<span>↔</span>B
+          </span>
+          <p>
+            Two perspectives.
+            <br />A fuller picture.
+          </p>
+        </div>
+        <button class="nav-item" data-action="about">
+          <i data-lucide="circle-help"></i>About the data
+        </button>
+        <a
+          class="nav-item"
+          href="https://github.com/raelsei/parallax"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i data-lucide="github"></i>View source
+          <i data-lucide="arrow-up-right" class="external"></i>
+        </a>
+        <a
+          class="made-by"
+          href="https://koray.dev"
+          target="_blank"
+          rel="noreferrer"
+        >
+          An experiment by <strong>koray.dev</strong>
+        </a>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <span class="breadcrumb">
+          Workspace <i data-lucide="chevron-right"></i>
+          <span id="breadcrumb-current">Overview</span>
+        </span>
+        <div class="top-actions">
+          <span class="public-indicator">
+            <span></span>Public GitHub data
+          </span>
+          <button class="button small" id="share">
+            <i data-lucide="link"></i>Share matchup
+          </button>
+        </div>
+      </header>
+      <main id="main">
+        <div class="page-heading">
+          <div>
+            <h1>
+              See the work.
+              <br class="mobile-break" /> Find the difference.
+            </h1>
+            <p>Put open source in perspective. One matchup at a time.</p>
+          </div>
+          <span class="version-label">A new angle on GitHub</span>
+        </div>
+        <form
+          id="matchup-form"
+          class="matchup-form"
+          aria-label="Compare GitHub developers"
+        >
+          <div class="handle-field">
+            <span class="identity-chip a">A</span>
+            <label for="handle-a" class="sr-only">
+              First GitHub username
+            </label>
+            <span class="at-sign">@</span>
+            <input
+              id="handle-a"
+              name="a"
+              value="raelsei"
+              placeholder="First username"
+              autocomplete="off"
+              spellcheck="false"
+              maxlength="200"
+              required
+            />
+          </div>
+          <button
+            class="swap-button"
+            type="button"
+            id="swap"
+            aria-label="Swap developers"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+          <div class="handle-field">
+            <span class="identity-chip b">B</span>
+            <label for="handle-b" class="sr-only">
+              Second GitHub username
+            </label>
+            <span class="at-sign">@</span>
+            <input
+              id="handle-b"
+              name="b"
+              value="antfu"
+              placeholder="Second username"
+              autocomplete="off"
+              spellcheck="false"
+              maxlength="200"
+            />
+          </div>
+          <button class="button primary" type="submit" id="compare">
+            <i data-lucide="scan-line"></i>Compare
+          </button>
+        </form>
+        <div
+          id="global-status"
+          class="status"
+          role="status"
+          aria-live="polite"
+        ></div>
+        <section
+          id="profiles"
+          class="profiles"
+          aria-label="Compared profiles"
+        ></section>
+        <div id="content" aria-busy="true">
+          <div class="initial-loading">
+            <span class="loader"></span>
+            <p>Finding a new perspective…</p>
+          </div>
+        </div>
+        <section
+          id="repo-detail"
+          class="repo-detail"
+          hidden
+          aria-labelledby="detail-heading"
+        ></section>
+        <section
+          id="about"
+          class="about-panel"
+          hidden
+          aria-labelledby="about-heading"
+        >
+          <div class="section-heading">
+            <h2 id="about-heading">A little context goes a long way.</h2>
+            <button
+              class="icon-button"
+              data-action="close-about"
+              aria-label="Close data explanation"
+            >
+              <i data-lucide="x"></i>
+            </button>
+          </div>
+          <div class="about-columns">
+            <div>
+              <h3>Public evidence, not a score</h3>
+              <p>
+                Parallax compares visible GitHub work. Stars show interest, not
+                code quality. These numbers never measure a developer’s ability
+                or their private work.
+              </p>
+              <h3>Repositories & languages</h3>
+              <p>
+                Stars and forks received are summed across loaded original
+                repositories. Forked repositories are excluded from those
+                totals. Language distribution counts each original repository’s
+                primary language, not lines of code.
+              </p>
+            </div>
+            <div>
+              <h3>A recent activity window</h3>
+              <p>
+                GitHub exposes up to 300 public events from the last 30 days,
+                with a possible delay. Events are not commits or annual
+                contributions. Each profile’s loaded coverage is shown.
+              </p>
+              <h3>Your browser, your requests</h3>
+              <p>
+                No login or token is needed. GitHub normally allows 60
+                unauthenticated requests per hour per IP. Results are cached in
+                this tab for five minutes. Additional pages and details load on
+                request.
+              </p>
+            </div>
+          </div>
+          <a
+            href="https://docs.github.com/en/rest"
+            target="_blank"
+            rel="noreferrer"
+            class="text-link"
+          >
+            GitHub REST API documentation <i data-lucide="arrow-up-right"></i>
+          </a>
+        </section>
+      </main>
+      <footer>
+        <span>
+          <span class="footer-mark"></span>Built for curiosity. Powered by
+          public data.
+        </span>
+        <button data-action="about">Data & methodology</button>
+        <span id="quota">GitHub REST API</span>
+      </footer>
+    </div>
+    <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+    <noscript>
+      <div class="no-js">
+        Enable JavaScript to compare live public GitHub data.{' '}
+        <a href="https://github.com">Explore GitHub directly</a>.
+      </div>
+    </noscript>
+    <script>
+      import '../scripts/app';
+    </script>
+  </body>
+</html>
