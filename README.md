@@ -6,7 +6,7 @@ Two developers. Two bodies of work. One new angle.
 
 Parallax is a public GitHub comparison workspace: put two profiles head to head, explore their repositories as a three-dimensional landscape, and follow the details behind the numbers. Built with Astro, TypeScript and Three.js. No sign-in, personal token or backend required.
 
-[Open Parallax](https://parallax.koray.dev) · [Try a matchup](https://parallax.koray.dev/?a=raelsei&b=antfu)
+[Open Parallax](https://parallax.koray.dev) · [Try a matchup](https://parallax.koray.dev/?a=yyx990803&b=antfu)
 
 ## What you can explore
 
